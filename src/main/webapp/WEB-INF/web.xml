@@ -1,0 +1,39 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Servlet 1</servlet-name>
+  	<servlet-class>servletAssignment1and2.Servlet1</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Servlet 2</servlet-name>
+  	<servlet-class>servletAssignment1and2.Servlet2</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>validation servlet</servlet-name>
+  	<servlet-class>servletAssignment3.Servlet3</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>page servlet</servlet-name>
+  	<servlet-class>servletAssignment3.PageServerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Servlet 1</servlet-name>
+  	<url-pattern>/insert.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Servlet 2</servlet-name>
+  	<url-pattern>/nextServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>validation servlet</servlet-name>
+  	<url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>page servlet</servlet-name>
+  	<url-pattern>/page</url-pattern>
+  </servlet-mapping>
+</web-app>
